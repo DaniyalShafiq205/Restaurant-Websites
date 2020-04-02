@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="../assets/icon/payment.ico">
+    <title>Order Placement</title>
+
+</head>
+
+<body >
+
+
+    <div class="container-fluid text-white " style="background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+       
+       
+        <nav class="navbar  navbar-dark position-absolute" >
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: white; background-color: rgb(10, 10, 10); font-size: larger;" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="order.html">Order Page</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+
+
+        <div class="p-5 text-center" style="font-size: 6rem; font-weight: 100;"> Make payment</div>
+        <form id="order" action="order.html" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 order-md-1 order-2 my-5">
+
+                       
+                        <p  class="py-3">1. Enter billing information</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Fullname">Full name</label>
+                                    <input type="text" name="Fullname" id="Fullname" class="form-control  text-white" placeholder=""
+                                        aria-describedby="Fullname" >
+                                    <small id="Fullname" class="text-muted d-none">Help text</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="E-mail">E-mail</label>
+                                    <input type="text" name="E-mail" id="E-mail" class="form-control text-white" placeholder=""
+                                        aria-describedby="E-mail" >
+                                    <small id="E-mail" class="text-muted d-none">Help text</small>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="Address">Address</label>
+                                    <input type="text" name="Address" id="Address" class="form-control  text-white" placeholder=""
+                                        aria-describedby="Address" >
+                                    <small id="Address" class="text-muted d-none">Help text</small>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Zipcode">Zip code</label>
+                                    <input type="text" name="Zipcode" id="Zipcode" class="form-control  text-white" placeholder=""
+                                        aria-describedby="Zipcode" >
+                                    <small id="Zipcode" class="text-muted d-none">Help text</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="City">City</label>
+                                    <input type="text" name="City" id="City" class="form-control  text-white" placeholder=""
+                                        aria-describedby="City" >
+                                    <small id="City" class="text-muted d-none">Help text</small>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="Country">Country</label>
+                                    <input type="text" name="Country" id="Country" class="form-control  text-white" placeholder=""
+                                        aria-describedby="Country" >
+                                    <small id="Country" class="text-muted d-none">Help text</small>
+                                </div>
+
+                               
+
+                            </div>
+                        </div>
+
+                            <p class="py-3">2.Add different shipping address</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Cardnumber">Card number</label>
+                                        <input type="text" name="Cardnumber" id="Cardnumber" class="form-control  text-white" placeholder=""
+                                            aria-describedby="Cardnumber" >
+                                        <small id="Cardnumber" class="text-muted d-none">Help text</small>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="Nameoncard">Name on card</label>
+                                        <input type="text" name="Nameoncard" id="Nameoncard" class="form-control  text-white" placeholder=""
+                                            aria-describedby="Nameoncard"
+                                            >
+                                        <small id="Nameoncard" class="text-muted d-none">Help text</small>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+                           
+                            <p class="py-2">3. Send as</p>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="sendtype" id="sendtype" value="checkedValue" checked >
+                                Printed giftcard<br>
+                                <input type="radio" class="form-check-input" name="sendtype" id="Digital pdf file" value="checkedValue" checked>
+                                Digital pdf file
+                              </label>
+                            </div>
+                            <p class="py-2">4. Message/greeting</p>
+                            <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea class="form-control  text-white"  name="message" id="message" rows="4" style="background-color: rgb(17, 16, 16);"></textarea>
+                            </div>
+                            <p class="py-2">5. Terms and conditions</p>
+                         <div class="form-check">
+                           <label class="form-check-label">
+                             <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                             I accept the terms and condtions
+                           </label>
+                         </div>    
+                        
+                    </div>
+
+                    <div class="col-md-4 offset-md-1 order-1">
+                       
+                           
+                        <div class="text-left ">
+                            Summary
+                        </div>
+                        <div class="form-group row py-2">
+                             
+                            <div class="col-8">
+                                1 x Seasonal menu
+                            </div>
+                            <div class="col-4  text-right">
+                                3500 Kr
+                            </div>
+                             
+                         </div>
+                         <hr style=" border: 1px solid rgb(212, 208, 208);" >
+
+                         <div class="form-group row pt-2">
+                             
+                            <div class="col-8">
+                                1 x Seasonal menu
+                            </div>
+                            <div class="col-4  text-right">
+                                3500 Kr
+                            </div>
+                             
+                         </div>
+
+                         <div class="form-group row ">
+                             
+                            <div class="col-8">
+                                1 x Seasonal menu
+                            </div>
+                            <div class="col-4  text-right">
+                                3500 Kr
+                            </div>
+                             
+                         </div>
+                         <div class="form-group row ">
+                             
+                            <div class="col-8">
+                                1 x Seasonal menu
+                            </div>
+                            <div class="col-4  text-right">
+                                3500 Kr
+                            </div>
+                             
+                         </div>
+                         
+                         <button type="submit" class="btn border bg-dark text-white" style="background-color:#000000!important;">Place Order</button>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="payment.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("input ").focus(function (e) { 
+             
+                
+            });
+        });
+    </script>
+</body>
+
+</html>
